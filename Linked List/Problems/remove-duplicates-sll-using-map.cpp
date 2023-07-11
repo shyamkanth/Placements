@@ -30,7 +30,7 @@ Node* removeDuplicates(Node* head) {
   if (head == NULL) {
     return NULL;
   }
-
+ 
   map<int, bool> visited;
   Node* prev = head;
   Node* curr = head->next;
