@@ -14,6 +14,7 @@ class Node{
     }
 };
 
+
 //Insertion at begining
 void insertAtBegining(Node* &head, int data ){
     Node* temp = new Node(data);
