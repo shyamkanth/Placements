@@ -3,26 +3,23 @@
 
 # Heading 
 `# Heading-name`
-This is a heading
 
 ## Subheading
 `## Subheading-name`
-This is a subheading
 
 ### Minor Heading
 `### Minor-heading-name`
-This is a minor heading
 
 # Styling Text
-`**Text**` | **Bold** - This is a bold text
+`**Text**` | **Bold**
 
-`*Text*` | *Italics* - This is a italic text
+`*Text*` | *Italics*
 
-`~~Text~~` | ~~Strikethorough~~ - This is a strike through text
+`~~Text~~` | ~~Strikethorough~~
 
-`<sub>Text</sub>` | <sub>Subscript</sub> - This is a subscript
+`<sub>Text</sub>` | <sub>Subscript</sub>
 
-`<sup>Text</sup>` | <sup>Superscript</sup> - This is a superscript
+`<sup>Text</sup>` | <sup>Superscript</sup>
 
 # Quoting Text
 `> This is a quoted text`
