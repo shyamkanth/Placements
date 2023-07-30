@@ -58,6 +58,10 @@ Given are the STL methods used in Stack
 
 `st.empty();`
 
+### Size : Return the size of stack
+
+`st.size();`
+
 ## Implentation using array
 First create a class named `Stack` and inside that class create one array and two variables, one that holds the value of top and second one is size.
 ```
