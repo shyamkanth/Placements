@@ -59,7 +59,7 @@ Given are the STL methods used in Stack
 `st.empty();`
 
 ## Implentation using array
-First create a class named `Stack` create one array and two variables, one that holds the value of top and second one is size.
+First create a class named `Stack` and inside that class create one array and two variables, one that holds the value of top and second one is size.
 ```
 int *arr;
 int size;
@@ -132,7 +132,7 @@ st.top();
 st.isEmpty();
 ```
 ## Implentation using Linked list
-First create a class named `Stack` create two variables, one that holds the value of top and second one is pointer to the next node.
+First create a class named `Stack` and inside that class create two variables, one that holds the value of top and second one is pointer to the next node.
 ```
 int data;
 Stack *next;
