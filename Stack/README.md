@@ -31,7 +31,7 @@ A stack can perform following operation :
 >**Deletion from stack is called Pop.**
 
 ### Methods
->Let suppose we have a stack like this
+Let suppose we have a stack like this
 ```
 #include<stack>
 using namespace std;
