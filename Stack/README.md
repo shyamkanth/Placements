@@ -20,10 +20,10 @@ Three ways to implement stack
 
 ### Operations
 A stack can perform following operation :
-- Insertion
-- Deletion
-- Peek (return top element)
-- Check Empty (return true if stack is empty)
+- Insertion : Insert an element at the top of stack
+- Deletion : Remove an element from the top of stack
+- Peek : Returns the top element
+- Check Empty : Return true if stack is empty
 >**Note: Insertion and deletion from stack can only be done from one end, known as top**.
 
 >**Insertion in stack is called Push.**
@@ -41,19 +41,19 @@ int main(){
 ```
 **Given are the STL methods used in Stack**
 
->**Insertion** 
+>**Insertion : Insert an element at the top of stack** 
 
 `st.push(val);`
 
->**Deletion**
+>**Deletion : Remove an element from the top of stack**
 
 `st.pop();`
 
->**Peek**
+>**Peek : Returns the top element**
 
 `st.top();`
 
->**Check empty**
+>**Check empty : Return true if stack is empty**
 
 `st.empty();`
 
