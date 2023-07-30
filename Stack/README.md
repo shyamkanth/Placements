@@ -136,7 +136,7 @@ st.top();
 st.isEmpty();
 ```
 ## Implentation using Linked list
-First create a class named `Stack` and inside that class create two variables, one that holds the value of top and second one is pointer to the next node.
+First create a class named `Stack` and inside that class create two variables, one that holds the value of the node and second one is pointer to the next node.
 ```
 int data;
 Stack *next;
