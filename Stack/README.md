@@ -40,7 +40,7 @@ int main(){
     stack<int> st;
 }
 ```
-Given are the STL methods used in Stack
+Given are some common STL methods used in Stack
 
 ### Insertion : Insert an element at the top of stack
 
