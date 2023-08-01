@@ -9,6 +9,8 @@
 
 >Many programs have already been uploaded and many are still yet to be uploaded.
 
+>You can directly navigate to questions directly from here [QUESTIONS.md](./QUESTIONS.md).
+
 ## Language
 `C++`
 
