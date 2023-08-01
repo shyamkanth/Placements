@@ -2,7 +2,6 @@
 ### Below is the list of questions solved till now. You can navigate through here too.
 ### Basic
 - [Linear search using iteration](./Basic/Array/linear-search-iteration.cc)
-- [Min-Max in 2-D array](./Basic/Array/min-max-in-2d-array.cc)
 - [Min-Max in array](./Basic/Array/min-max-in-array.cc)
 - [Prime Number](./Basic/Array/prime-no.cpp)
 ### Geeks for Geeks
