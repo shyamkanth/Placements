@@ -22,8 +22,6 @@ vector<int> nextSmallerElement(vector<int> &arr, int n) {
         res.push_back(st.top());
         st.push(curr);
     }
-
-    // Reverse the vector 'res' to get the correct order
     reverse(res.begin(), res.end());
 
     return res;
@@ -31,11 +29,11 @@ vector<int> nextSmallerElement(vector<int> &arr, int n) {
 
 int main() {
     vector<int> arr = {2, 3, 1};
-    vector<int> result = nextSmallerElement(arr, 3);
+    vector<int> result;
+    result = nextSmallerElement(arr, 3);
 
     for (int i : result) {
         cout << i << " ";
     }
     return 0;
 }
-

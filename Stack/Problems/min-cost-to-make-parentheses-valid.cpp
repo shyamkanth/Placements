@@ -43,7 +43,7 @@ int minCost(string str){
 
 int main()
 {
-    string str = "{{{}}}";
+    string str = "{{{{}}";
     int cost = minCost(str);
     if(cost ==0){
         cout<<"String is valid";
