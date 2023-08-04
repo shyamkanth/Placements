@@ -14,16 +14,15 @@ vector<int> nextSmallerElement(vector<int> &arr, int n) {
     stack<int> st;
     st.push(-1);
 
-    for (int i = n - 1; i >= 0; i--) {
+    for(int i = n-1;i>=0;i--){
         int curr = arr[i];
-        while (!st.empty() && st.top() >= curr) {
+        while(st.top()>=curr){
             st.pop();
         }
         res.push_back(st.top());
         st.push(curr);
     }
     reverse(res.begin(), res.end());
-
     return res;
 }
 
