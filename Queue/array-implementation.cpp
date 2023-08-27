@@ -77,6 +77,17 @@ class Queue{
         return cnt;
     }
 
+    void print(){
+        if(front == -1){
+            cout<<"Size is 0"<<endl;
+            return;
+        }
+        for(int i=front;i<=rear;i++){
+            cout<<arr[i]<<" ";
+        }
+        cout<<endl;
+    }
+
 };
 
 int main(){
@@ -87,6 +98,7 @@ int main(){
     q.enque(4);
     q.enque(5);
 
+    q.print();
     cout<<q.length()<<endl;
     cout<<q.frontEle()<<endl;
     cout<<q.lastEle()<<endl;
