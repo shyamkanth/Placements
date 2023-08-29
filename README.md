@@ -24,10 +24,10 @@ Recursion
 Searching algorithms
 Sorting algorithms
 Stack
+Queue
 ```
 ## Topics yet to come
 ```
-Queue
 Tree
 Graph
 Hashmap
@@ -43,6 +43,7 @@ More problems
 - [Searching algorithm](./Searching/)
 - [Sorting algorithms](./Sorting/)
 - [Stack](./Stack/)
+- [Queue](./Queue/)
 
 ## Navigate to particular `README.md`
 - [Basic](./Basic/Array/README.md)
