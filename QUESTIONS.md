@@ -95,3 +95,10 @@
 - [Redundant bracket](./Stack/Problems/redundant-bracket.cpp)
 - [Next smaller element](./Stack/Problems/next-smaller-element.cpp)
 - [Minimum cost to make parentheses valid](./Stack/Problems/min-cost-to-make-parentheses-valid.cpp)
+### Queue
+- [STL implementation of Queue](./Queue/Implementation/stl-implementation.cpp)
+- [Array implementation of Queue](./Queue/Implementation/array-implementation.cpp)
+- [Doubly ended queue implementation](./Queue/Implementation/deq-implementation.cpp)
+- [Reverse a Queue](./Queue/Problems/reverse-queue.cpp)
+- [Reverse K element from Queue](./Queue/Problems/reverese-k-elements.cpp)
+- [First negative integer in Queue](./Queue/Problems/first-negative-integer-in-window.cpp)
