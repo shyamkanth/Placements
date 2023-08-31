@@ -103,3 +103,4 @@
 - [Reverse K element from Queue](./Queue/Problems/reverese-k-elements.cpp)
 - [First negative integer in Queue](./Queue/Problems/first-negative-integer-in-window.cpp)
 - [First non repeating character in input stream](./Queue/Problems/first-NRC-in-stream.cpp)
+- [Circular tour](./Queue/Problems/circular-tour.cpp)
