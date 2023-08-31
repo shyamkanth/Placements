@@ -104,3 +104,4 @@
 - [First negative integer in Queue](./Queue/Problems/first-negative-integer-in-window.cpp)
 - [First non repeating character in input stream](./Queue/Problems/first-NRC-in-stream.cpp)
 - [Circular tour](./Queue/Problems/circular-tour.cpp)
+- [Interleave first half of queue with second half](./Queue/Problems/interleave-first-half-with-second-half.cpp)
