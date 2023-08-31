@@ -102,3 +102,4 @@
 - [Reverse a Queue](./Queue/Problems/reverse-queue.cpp)
 - [Reverse K element from Queue](./Queue/Problems/reverese-k-elements.cpp)
 - [First negative integer in Queue](./Queue/Problems/first-negative-integer-in-window.cpp)
+- [First non repeating character in input stream](./Queue/Problems/first-NRC-in-stream.cpp)
