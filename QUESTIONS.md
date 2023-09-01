@@ -109,3 +109,6 @@
 - [Binary tree implementation](./Tree/Implementation/Binary-tree.cpp)
 - [Creation of Binary tree](./Tree/Implementation/Creation-of-binary-tree.cpp)
 - [Level order traversal of Binary tree](./Tree/Traversal/level-order-traversal.cpp)
+- [Inorder traversal of Binary tree](./Tree/Traversal/inorder-traversal.cpp)
+- [Preorder traversal of Binary tree](./Tree/Traversal/preorder-traversal.cpp)
+- [Postorder traversal of Binary tree](./Tree/Traversal/postorder-traversal.cpp)
