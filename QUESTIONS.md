@@ -105,3 +105,6 @@
 - [First non repeating character in input stream](./Queue/Problems/first-NRC-in-stream.cpp)
 - [Circular tour](./Queue/Problems/circular-tour.cpp)
 - [Interleave first half of queue with second half](./Queue/Problems/interleave-first-half-with-second-half.cpp)
+### Tree
+- [Binary tree implementation](./Tree/Implementation/Binary-tree.cpp)
+- [Creation of Binary tree](./Tree/Implementation/Creation-of-binary-tree.cpp)

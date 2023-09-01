@@ -25,10 +25,10 @@ Searching algorithms
 Sorting algorithms
 Stack
 Queue
+Tree
 ```
 ## Topics yet to come
 ```
-Tree
 Graph
 Hashmap
 Dynamic Progrmming
@@ -44,6 +44,7 @@ More problems
 - [Sorting algorithms](./Sorting/)
 - [Stack](./Stack/)
 - [Queue](./Queue/)
+- [Tree](./Tree/)
 
 ## Navigate to particular `README.md`
 - [Basic](./Basic/Array/README.md)
@@ -54,3 +55,5 @@ More problems
 - [Searching algorithm](./Searching/README.md)
 - [Sorting algorithms](./Sorting/README.md)
 - [Stack](./Stack/README.md)
+- [Queue](./Queue/README.md)
+- [Tree](./Tree/README.md)
