@@ -1,4 +1,4 @@
-// Creation of Binary tree
+// Implementation of Binary tree
 // Shyam Sunder Kanth
 // Insta : still_23.6_8
 
