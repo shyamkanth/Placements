@@ -27,13 +27,6 @@ Stack
 Queue
 Tree
 ```
-## Topics yet to come
-```
-Graph
-Hashmap
-Dynamic Progrmming
-More problems
-```
 ## Navigate
 - [Basic](./Basic/)
 - [Leetcode](./Leetcode/)
@@ -57,3 +50,11 @@ More problems
 - [Stack](./Stack/README.md)
 - [Queue](./Queue/README.md)
 - [Tree](./Tree/README.md)
+
+## Topics yet to come
+```
+Graph
+Hashmap
+Dynamic Progrmming
+More problems
+```
