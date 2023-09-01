@@ -115,3 +115,4 @@
 - [Build tree from level order](./Tree/Problems/Build-tree-from-level-order.cpp)
 - [Count number of leaf nodes](./Tree/Problems/count-leaf-nodes.cpp)
 - [Height of Binary tree](./Tree/Problems/hieght-of-binary-tree.cpp)
+- [Diameter of Binary tree](./Tree/Problems/Diameter-of-binary-tree.cpp)
