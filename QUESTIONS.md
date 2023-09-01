@@ -113,3 +113,4 @@
 - [Preorder traversal of Binary tree](./Tree/Traversal/preorder-traversal.cpp)
 - [Postorder traversal of Binary tree](./Tree/Traversal/postorder-traversal.cpp)
 - [Build tree from level order](./Tree/Problems/Build-tree-from-level-order.cpp)
+- [Count number of leaf nodes](./Tree/Problems/count-leaf-nodes.cpp)
