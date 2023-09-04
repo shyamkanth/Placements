@@ -118,3 +118,4 @@
 - [Diameter of Binary tree](./Tree/Problems/Diameter-of-binary-tree.cpp)
 - [Check balanced tree](./Tree/Problems/Check-balanced-tree.cpp)
 - [Determine two trees are identical or not](./Tree/Problems/two-tree-identical.cpp)
+- [Sum Tree](./Tree/Problems/Sum-tree.cpp)
