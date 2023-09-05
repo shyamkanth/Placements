@@ -121,3 +121,4 @@
 - [Sum Tree](./Tree/Problems/Sum-tree.cpp)
 - [Zig-Zag / Spiral traversal](./Tree/Problems/zig-zag-traversal.cpp)
 - [Boundary traversal of Binary tree](./Tree/Problems/Boundary-traversal-of-binary-tree.cpp)
+- [Vertical order traversal of Binary tree](./Tree/Problems/vertical-order-traversal.cpp)
