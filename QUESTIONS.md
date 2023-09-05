@@ -120,3 +120,4 @@
 - [Determine two trees are identical or not](./Tree/Problems/two-tree-identical.cpp)
 - [Sum Tree](./Tree/Problems/Sum-tree.cpp)
 - [Zig-Zag / Spiral traversal](./Tree/Problems/zig-zag-traversal.cpp)
+- [Boundary traversal of Binary tree](./Tree/Problems/Boundary-traversal-of-binary-tree.cpp)
