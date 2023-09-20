@@ -16,27 +16,39 @@ class Node{
 
 
 //Insertion at begining
-void insertAtBegining(Node* &head, int data ){
-    Node* temp = new Node(data);
-    temp->next = head;
-    head = temp;
+void insertAtBeginning(Node* &head,Node* &tail, int data){
+    // Creation of new Node
+    Node* newNode = new Node(data);
+
+    // CHeck if the list is empty
+    if(head == NULL){
+        head = newNode;
+        tail = newNode;
+        return;
+    }
+
+    newNode->next = head;
+    head = newNode;
 }
 
 // Traversing the list
-void print(Node* &head){
+void print(Node* head, Node* tail){
     Node* temp = head;
     while(temp != NULL){
         cout<<temp->data<<" ";
         temp = temp->next;
     }
+    cout<<endl;
+    cout<<"Head : "<<head->data<<endl;
+    cout<<"Tail : "<<tail->data<<endl;
 }
 
 int main()
 {
-    Node* node1 = new Node(10);
-    Node* head = node1;
-    insertAtBegining(head,12);
-    insertAtBegining(head,15);
-    print(head);
+    Node* head = NULL;
+    Node* tail = NULL;
+    insertAtBeginning(head,tail,10);
+    insertAtBeginning(head,tail,20);
+    print(head,tail);
     return 0;
 }
