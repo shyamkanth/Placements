@@ -99,6 +99,68 @@ void insertAtPos(Node* &head, Node* &tail, int data, int pos){
     front->prev = newNode;
 }
 
+void delFromBeg(Node* &head, Node* &tail){
+    // Step 1:Empty list case
+    if(head == NULL){
+        cout<<"List is empty";
+        return;
+    }
+
+    // Step 2: Handle non empty list case
+    head = head->next;
+    head->prev->next = NULL;
+    head->prev = NULL;
+}
+
+void delFromEnd(Node* &head, Node* &tail){
+    // Step 1: Empty list
+    if(head == NULL){
+        cout<<"List is empty";
+        return;
+    }
+
+    // Step 2: Non empty list
+    tail = tail->prev;
+    tail->next->prev = NULL;
+    tail->next = NULL;
+}
+
+void delFromPos(Node* &head, Node* &tail, int pos){
+    // Step 1: Handle empty list case
+    if(head == NULL){
+        cout<<"List is empty";
+        return;
+    }
+
+    // Step 2: Handle non-empty list case
+    // case 1: Deletion at beginning
+    if(pos == 1){
+        delFromBeg(head,tail);
+        return;
+    }
+
+    // Case 2: Deletion from end
+    int len = length(head);
+    if(pos == len){
+        delFromEnd(head,tail);
+        return;
+    }
+
+    // Case 3: Any random position
+    Node* back = NULL;
+    Node* curr = head;
+    int cnt = 1;
+    while(cnt<pos){
+        back = curr;
+        curr = curr->next;
+        cnt++;
+    }
+    back->next = curr->next;
+    curr->next->prev = back;
+    curr->prev = NULL;
+    curr->next = NULL;
+}
+
 void print(Node* head, Node* tail){
     if(head == NULL){
         cout<<"List is empty."<<endl;
@@ -130,6 +192,17 @@ int main(){
     insertAtPos(head,tail,8,6);
     insertAtPos(head,tail,2,2);
     insertAtPos(head,tail,3,3);
+
+    // delFromBeg(head,tail);
+    // delFromBeg(head,tail);
+
+    // delFromEnd(head,tail);
+    // delFromEnd(head,tail);
+
+    delFromPos(head,tail,1);
+    delFromPos(head,tail,7);
+    delFromPos(head,tail,3);
+    delFromPos(head,tail,4);
     print(head,tail);
 
     

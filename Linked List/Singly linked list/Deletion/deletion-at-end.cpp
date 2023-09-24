@@ -12,62 +12,63 @@ class Node{
         this->data = data;
         this->next = NULL;
     }
-
-    //Destructor
-    ~Node(){
-        int value = this->data;
-        if(this->next!=NULL){
-            delete next;
-            this->next = NULL;
-        }
-        cout<<"Memory is free for the Node with data "<<value<<". New list is : "<<endl;
-    }
-
-    //Deletion from End
-    void deletionAtEnd(Node* &head){
-        Node* curr = head;
-        Node* prev= NULL;
-        while(curr->next!=NULL){
-            prev = curr;
-            curr=curr->next;
-        }
-        if(prev->next!=NULL){
-            prev->next = NULL;
-        }else{
-            head = NULL;
-        }
-        delete curr;
-    }
-
-    //Insertion at Begining
-    void insertionAtBegining(Node* &head, int data){
-        Node* temp = new Node(data);
-        temp->next = head;
-        head = temp;
-    }
-
-    //Traversal
-    void print(Node* &head){
-        Node* temp = head;
-        while(temp!=NULL){
-            cout<<temp->data<<" ";
-            temp = temp->next;
-        }
-        cout<<endl;
-    }
 };
+
+void delFromEnd(Node* &head, Node* &tail){
+    // Step 1: EMpty list
+    if(head == NULL){
+        cout<<"List is empty"<<endl;
+        return;
+    }
+
+    // Step 2: Non-empty list
+    Node* temp = head;
+    while(temp->next != tail){
+        temp = temp->next;
+    }
+    tail = temp;
+    temp->next = NULL;
+}
+
+void insertAtBeginning(Node* &head,Node* &tail, int data){
+    // Creation of new Node
+    Node* newNode = new Node(data);
+
+    // CHeck if the list is empty
+    if(head == NULL){
+        head = newNode;
+        tail = newNode;
+        return;
+    }
+
+    newNode->next = head;
+    head = newNode;
+}
+
+void print(Node* head, Node* tail){
+    Node* temp = head;
+    while(temp != NULL){
+        cout<<temp->data<<" ";
+        temp = temp->next;
+    }
+    cout<<endl;
+    cout<<"Head : "<<head->data<<endl;
+    cout<<"Tail : "<<tail->data<<endl;
+}
+
 
 int main()
 {
-    Node* node1 = new Node(10);
-    Node* head = node1;
-    Node* operation;
-    operation->print(head);
-    operation->insertionAtBegining(head,9);
-    operation->print(head);
-    operation->insertionAtBegining(head,8);
-    operation->print(head);
-    operation->deletionAtEnd(head);
-    operation->print(head);
+    Node* head = NULL;
+    Node* tail = NULL;
+
+    insertAtBeginning(head,tail,10);
+    insertAtBeginning(head,tail,20);
+    insertAtBeginning(head,tail,30);
+    insertAtBeginning(head,tail,40);
+
+    delFromEnd(head,tail);
+    print(head,tail);
+    
     return 0;
 }

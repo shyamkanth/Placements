@@ -15,34 +15,37 @@ class Node{
 };
 
 
-//Insertion at end
-void insertionAtend(Node* &tail, int data){
-    Node* temp = new Node(data);
-    tail->next = temp;
-    tail = temp;
+void insertionAtEnd(Node* &head, Node* &tail, int data){
+    Node* newNode = new Node(data);
+
+    if(head == NULL){
+        head = newNode;
+        tail = newNode;
+    }else{
+        tail->next = newNode;
+        tail = newNode;
+    }
 }
 
-//Traversing the linked list
-void print(Node* head){
+void print(Node* head, Node* tail){
     Node* temp = head;
     while(temp != NULL){
         cout<<temp->data<<" ";
         temp = temp->next;
     }
     cout<<endl;
+    cout<<"Head : "<<head->data<<endl;
+    cout<<"Tail : "<<tail->data<<endl;
 }
 
 int main()
 {
-    Node* node1 = new Node(1);
-    Node* head = node1;
-    Node* tail = node1;
-    print(head);
-    insertionAtend(tail,2);
-    print(head);
-    insertionAtend(tail,3);
+    Node* head = NULL;
+    Node* tail = NULL;
+    insertionAtEnd(head,tail,30);
+    insertionAtEnd(head,tail,40);
 
-    print(head);
+    print(head,tail);
 
     return 0;
 }

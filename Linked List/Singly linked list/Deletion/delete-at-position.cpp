@@ -7,68 +7,128 @@ class Node{
     int data;
     Node* next;
 
-    //Constructor
-    Node(int data){
-        this->data = data;
+    Node(int val){
+        this->data = val;
         this->next = NULL;
-    }
-
-    //Destructor
-    ~Node(){
-        int value = this->data;
-        if(this->next!=NULL){
-            delete next;
-            this->next = NULL;
-        }
-        cout<<"Memory is free for the Node with data "<<value<<". New list is : "<<endl;
-    }
-
-    // Deletion at Any Position
-    void deletionAtPosition(Node* &head, int position){
-        Node* curr = head;
-        Node* prev = NULL;
-        int cnt = 1;
-        while(cnt<position){
-            prev = curr;
-            curr = curr->next;
-            cnt++;
-        }
-        prev->next = curr->next;
-        curr->next = NULL;
-        delete curr;
-    }
-
-    // Insertion at Begining
-    void insertionAtBegining(Node* &head, int data){
-        Node* temp = new Node(data);
-        temp->next = head;
-        head = temp;
-    }
-
-    // Traversal
-    void print(Node* &head){
-        Node* temp = head;
-        while(temp!=NULL){
-            cout<<temp->data<<" ";
-            temp = temp->next;
-        }
-        cout<<endl;
     }
 };
 
+int length(Node* head){
+    Node* temp = head;
+    int cnt = 1;
+    while(temp->next != NULL){
+        cnt++;
+        temp = temp->next;
+    }
+    return cnt;
+}
+
+void delFromBeg(Node* &head, Node* &tail){
+    // step 1: Handle Empty list case
+    if(head == NULL){
+        cout<<"List is empty"<<endl;
+        return;
+    }
+
+    // Step 2: Handle Non empty list case
+    Node* temp = head;
+    head = head->next;
+    temp->next = NULL;
+}
+
+void delFromEnd(Node* &head, Node* &tail){
+    // Step 1: EMpty list
+    if(head == NULL){
+        cout<<"List is empty"<<endl;
+        return;
+    }
+
+    // Step 2: Non-empty list
+    Node* temp = head;
+    while(temp->next != tail){
+        temp = temp->next;
+    }
+    tail = temp;
+    temp->next = NULL;
+}
+
+void delFromPos(Node* &head, Node* &tail, int pos){
+    // Case 1: handle empty list case
+    if(head == NULL){
+        cout<<"List is empty"<<endl;
+        return;
+    }
+
+    // Case 2: Non-empty list handle karo
+    // Subcase 1: Deletion from beginning case
+    if(pos == 1){
+        delFromBeg(head,tail);
+        return;
+    }
+
+    // Subcase 2: Deletion from end case
+    int len = length(head);
+    if(pos == len){
+        delFromEnd(head,tail);
+        return;
+    }
+
+    // Subcase 3: Any random position
+    Node* curr = head;
+    Node* prev = NULL;
+    int cnt = 1;
+    while(cnt<pos){
+        prev = curr;
+        curr = curr->next;
+        cnt++;
+    }
+    prev->next = curr->next;
+    curr->next = NULL;
+}
+
+void insertAtBeginning(Node* &head,Node* &tail, int data){
+    // Creation of new Node
+    Node* newNode = new Node(data);
+
+    // CHeck if the list is empty
+    if(head == NULL){
+        head = newNode;
+        tail = newNode;
+        return;
+    }
+
+    newNode->next = head;
+    head = newNode;
+}
+
+void print(Node* head, Node* tail){
+    Node* temp = head;
+    while(temp != NULL){
+        cout<<temp->data<<" ";
+        temp = temp->next;
+    }
+    cout<<endl;
+    cout<<"Head : "<<head->data<<endl;
+    cout<<"Tail : "<<tail->data<<endl;
+}
+
 int main()
 {
-    Node* node1 = new Node(10);
-    Node* head = node1;
-    Node* operation;
-    operation->print(head);
-    operation->insertionAtBegining(head,9);
-    operation->insertionAtBegining(head,8);
-    operation->insertionAtBegining(head,7);
-    operation->insertionAtBegining(head,6);
-    operation->insertionAtBegining(head,5);
-    operation->print(head);
-    operation->deletionAtPosition(head,4);
-    operation->print(head);
+    Node* head = NULL;
+    Node* tail = NULL;
+
+    insertAtBeginning(head,tail,10);
+    insertAtBeginning(head,tail,20);
+    insertAtBeginning(head,tail,30);
+    insertAtBeginning(head,tail,40);
+    insertAtBeginning(head,tail,50);
+    insertAtBeginning(head,tail,60);
+
+    delFromPos(head,tail,1);
+    delFromPos(head,tail,5);
+    delFromPos(head,tail,3);
+    cout<<"After Deletion"<<endl;
+    print(head,tail);
+
     return 0;
 }
