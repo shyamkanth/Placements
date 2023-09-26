@@ -27,7 +27,7 @@ Node* buildTree(Node* root){
 
     root = new Node(data);
 
-    if(data == -1){
+    if(data <=0){
         return NULL;
     }
 
